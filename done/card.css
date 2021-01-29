@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: "Raleway";
+    outline: none; /*désactive les grosses bordures noires quand on clique sur un champ de recherche ou un bouton*/
+    
+}
+
+body{
+    background-color: #d2d2d2;
+}
+
+@font-face{
+    font-family: "Raleway";
+    src: url("ressources/Raleway/static/Raleway-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-SemiBold";
+    src: url("ressources/Raleway/static/Raleway-SemiBold.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-Bold";
+    src: url("ressources/Raleway/static/Raleway-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-Black";
+    src: url("ressources/Raleway/static/Raleway-Black.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-Medium";
+    src: url("ressources/Raleway/static/Raleway-Medium.ttf");
+}
+
+
+/* DIV PRINCIPALE (l'image sera en background)*/
+.card{
+    border: 6px solid white;
+    border-radius: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+    display: flex; 
+    align-items: flex-end;
+    background: url("ressources/Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg") no-repeat;
+    background-size: 300px 180px;
+}
+
+
+/* DIV qui contient le texte uniquement */
+
+.card-info{
+    display: flex;
+    height: 35%;
+    width: 100%;
+    background-color:white;
+    flex-direction: column;  
+    justify-content: center;
+    border-radius: 0px 0px 0px 0px;
+    padding-left: 10px;
+}
+
+/* DIV qui contient le h6 */
+.card-title{
+    margin-bottom: 5px;
+}
+
+.card-title h3{
+    font-family: "Raleway-Black";
+}
+
+/* DIV qui contient le p */
+.card-text{
+    margin-bottom: 5px;
+}
+
+/* DIV qui contient les étoiles */
+.stars{
+    display: inline-flex;
+}
+
+.stars :nth-child(1){
+    color: #0065FC;
+}
+.stars :nth-child(2){
+    color: #0065FC;
+}
+.stars :nth-child(3){
+    color: #0065FC;
+}
+.stars :nth-child(4){
+    color: #0065FC;
+}
+.stars :nth-child(5){
+    color: #DEEBFF;
+}

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+    outline: none; /*désactive les grosses bordures noires quand on clique sur un champ de recherche ou un bouton*/
+}
+
+@font-face{
+    font-family: "Raleway";
+    src: url("ressources/Raleway/static/Raleway-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-SemiBold";
+    src: url("ressources/Raleway/static/Raleway-SemiBold.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-Bold";
+    src: url("ressources/Raleway/static/Raleway-Bold.ttf");
+}
+
+/*! ------------------------ BARRE DE RECHERCHE--------------------*/
+
+/* conteneur principale de la barre */
+.contain-bar{
+    display: flex;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* conteneur du logo et le logo*/
+.contain-localisation{
+    display: flex;
+    background-color: #F2F2F2;
+    width: 40px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.fa-map-marker-alt{
+    width: 40px;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+/* conteneur barre de recherche et barre de recherche */
+.contain-search{
+    
+}
+
+.search{
+    height: 38px;
+    width: 180px;
+    border: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    font-size: 14px;
+    padding-left: 10px;
+    color: black;
+    font-family: "Raleway-Bold";
+    border-radius: 0px;
+}
+
+.search:focus{border: 1px solid #0065FC;}
+
+/* conteneur bouton et bouton */
+.contain-submit{
+}
+
+.submit{
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #0065FC;
+    font-size: 14px;
+    border-radius: 0px 8px 8px 0px;
+    color: white;
+    font-family: "Raleway-Bold";
+}
+
+/*! ------------------- Mise en page titre ------------------*/
+
+h3{margin:0px 0px 8px 20px;font-family: "Raleway-Bold";}
+p{margin:0px 0px 5px 20px;font-size: 13px;}
+
+
+
