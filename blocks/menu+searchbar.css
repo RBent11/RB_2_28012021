@@ -1,0 +1,243 @@
+/* propriétés génériques pour toute la page */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+    outline: none;
+}
+
+li{
+    list-style: none;
+    font-size: 14px;
+    
+}
+
+@font-face{
+    font-family: "Raleway";
+    src: url("ressources/Raleway/static/Raleway-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-SemiBold";
+    src: url("ressources/Raleway/static/Raleway-SemiBold.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-Bold";
+    src: url("ressources/Raleway/static/Raleway-Bold.ttf");
+}
+
+/* conteneur header qui contient le logo et la nav, déf de la taille et de la flexbox */
+.site-header{
+    
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+/* taille et marge du logo */
+.logo{
+    width: 90px;
+    height: 45px;
+    margin: 40px 40px 20px 40px;
+}
+
+
+/* mise en page de la navigation et du survol de la navigation */
+.navigation{
+    display: flex;
+    align-items: center;
+      
+}
+
+.onglet{  
+    display: inline-block; 
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding-top: 50px;
+    
+    
+}
+
+.onglet:hover{
+    display: inline-block; 
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding-top: 47px;
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+
+/* .inscription{
+    display: inline-block; 
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding-top: 50px;
+     
+} */
+
+.inscription{
+    display: inline-block; 
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding-top: 50px;
+    color: #0065FC;
+    font-weight: bold;
+    font-family: "Raleway-Bold"; 
+}
+
+/*! ------------------------ BARRE DE RECHERCHE--------------------*/
+
+/* conteneur principale de la barre */
+.contain-bar{
+    display: flex;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+/* conteneur du logo et le logo*/
+.contain-localisation{
+    display: flex;
+    background-color: #F2F2F2;
+    width: 40px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.fa-map-marker-alt{
+    width: 40px;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+/* conteneur barre de recherche et barre de recherche */
+.contain-search{
+    
+}
+
+.search{
+    height: 38px;
+    width: 180px;
+    border: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    font-size: 14px;
+    padding-left: 10px;
+    color: black;
+    font-family: "Raleway-Bold";
+    border-radius: 0px;
+}
+
+.search:focus{border: 1px solid #0065FC;}
+
+/* conteneur bouton et bouton */
+.contain-submit{
+}
+
+.submit{
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #0065FC;
+    font-size: 14px;
+    border-radius: 0px 8px 8px 0px;
+    color: white;
+    font-family: "Raleway-Bold";
+}
+
+/*! ------------------- Mise en page titre ------------------*/
+section{margin-bottom: 20px;}
+.title-searchbar{margin:0px 0px 8px 40px;font-family: "Raleway-Bold";}
+.text-searchbar{margin:0px 0px 5px 40px;font-size: 13px; }
+
+
+.filters-container{margin-left: 40px;}
+
+.title-filters{display: inline-block;}
+/* Conteneur des filtres */
+.filters{
+    
+    border-top: 2px solid #F2F2F2;
+    border-right: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    display: inline-flex;
+    border-radius: 30px; 
+    background-color: white;
+    border-left:none;
+    margin: 10px;
+
+}
+
+/* LOGO */
+.contain-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    /* padding:5px; */
+    width: 40px;
+    height: 40px;
+    /* text-align: center; */
+    /* margin-right: 5px; */
+}
+
+.button{
+    border:none;  
+    height: 100%;
+    background-color:white;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 10px;
+    font-family: "Raleway-Bold";
+}
+
+
+.fa-info, .fa-dog, .fa-heart, .fa-child, .fa-money-bill-wave{
+    font-size: 15px;
+    color: #0065FC;
+    
+}
+
+/* BOUTON RECHERCHE */
+
+
+/* Icone information + phrase */
+
+
+.contain-info{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border:1px solid #DEEBFF;
+}
+
+.fa-info{
+    font-size: 8px;
+}
+
+.text-info{
+    margin-left: 5px;
+    
+}
+
+.text-info p{
+    font-family: "Raleway";
+    font-size: 15px;
+}
+
+.information{
+    display: flex;
+    align-items: center;  
+}
+
