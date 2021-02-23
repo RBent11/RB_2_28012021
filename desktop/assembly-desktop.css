@@ -1,0 +1,703 @@
+/*! ------------------------------------------------ GLOBAL
+/*! ------------------------------------------------ ----------------------------------------------------------------
+/*! ------------------------------------------------ */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+    outline: none; /*désactive les grosses bordures noires quand on clique sur un champ de recherche ou un bouton*/
+}
+
+@font-face{
+    font-family: "Raleway";
+    src: url("ressources/Raleway/static/Raleway-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-SemiBold";
+    src: url("ressources/Raleway/static/Raleway-SemiBold.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-Bold";
+    src: url("ressources/Raleway/static/Raleway-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-Black";
+    src: url("ressources/Raleway/static/Raleway-Black.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-ExtraLight";
+    src: url("ressources/Raleway/static/Raleway-ExtraLight.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-Medium";
+    src: url("ressources/Raleway/static/Raleway-Medium.ttf");
+}
+
+@font-face{
+    font-family: "Raleway-Thin";
+    src: url("ressources/Raleway/static/Raleway-Thin.ttf");
+}
+
+
+
+li{
+    list-style: none;
+    
+}
+
+a{text-decoration: none; color:black;}
+
+section{margin-bottom: 25px;}
+
+/* h1,h2,h3,h4,h5,h6{font-family: "Raleway-Medium";} */
+
+/*! ------------------------------------------------ HEADER + NAV ---------------------------------------------------------------- */
+
+/* conteneur header qui contient le logo et la nav, déf de la taille et de la flexbox */
+.site-header{
+    
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+/* taille et marge du logo */
+.logo{
+    width: 90px;
+    height: 45px;
+    margin: 30px 40px 20px 40px;
+}
+
+
+/* mise en page de la navigation et du survol de la navigation */
+.navigation{
+    display: flex;
+    align-items: center;
+      
+}
+
+.onglet{  
+    display: inline-block; 
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 15px;    
+}
+
+.onglet:hover{
+    display: inline-block; 
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding-top: 47px;
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+
+.inscription{
+    display: inline-block; 
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding-top: 50px;
+    color: #0065FC;
+    font-family: "Raleway-Bold"; 
+}
+
+
+/*! ------------------------------------------------ BARRE DE RECHERCHE ---------------------------------------------------------- */
+
+
+.searchbar-title{margin:0px 0px 15px 40px;font-family: "Raleway-Medium";font-size: 20px;}
+.searchbar-text{margin:0px 0px 20px 40px;font-size: 15px;}
+
+
+/* conteneur principale de la barre */
+.contain-bar{
+    display: flex;
+    height: 50px;
+    margin:0px 0px 0px 40px;
+    
+}
+
+
+.contain-localisation{
+    display: flex;
+    background-color: #F2F2F2;
+    width: 50px;
+    border-radius: 16px 0px 0px 16px;
+    font-size: 16px;
+}
+
+
+/* .contain-submit{
+    display: flex;
+    background-color: #F2F2F2;
+    width: 70px;
+    border-radius: 16px;
+} */
+
+.fa-map-marker-alt{
+    width: 40px;
+    margin:auto;
+    text-align: center;
+}
+
+/* conteneur barre de recherche et barre de recherche */
+.contain-search{
+    display: flex;
+    border: 1px solid #F2F2F2;
+    border-radius: 16px;
+}
+
+
+.search{
+    height: 38px;
+    width: 190px;
+    border: none;
+    font-size: 16px;
+    padding-left: 10px;
+    font-family: "Raleway-Bold";
+    border-radius: 0px;
+    margin: auto;
+}
+
+.search::placeholder{color: black;}
+
+/* conteneur bouton et bouton */
+
+
+.submit{
+    width: 130px;
+    height: 50px;
+    border: none;
+    background-color: #0065FC;
+    font-size: 16px;
+    border-radius: 0px 16px 16px 0px;
+    color: white;
+    font-family: "Raleway-Bold";
+}
+
+
+
+/*! ------------------------------------------------ FILTRES ---------------------------------------------------------- */
+.filters-bubbles{display: flex; flex-wrap: wrap; align-items: center;}
+.title-filters{display: inline-block; width: auto; margin: 0px 10px 0px 40px;}
+/* Conteneur des filtres */
+.filters{
+    
+    border-top: 2px solid #d9d9d9;
+    border-right: 2px solid #d9d9d9;
+    border-bottom: 2px solid #d9d9d9;
+    display: inline-flex;
+    border-radius: 30px; 
+    background-color: white;
+    border-left:none;
+    margin: 10px;
+    height: 40px;
+    /* width: 180px; */
+
+}
+
+/* LOGO */
+.contain-logo{
+    display: flex;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+}
+
+.fa-info, .fa-dog, .fa-heart, .fa-child, .fa-money-bill-wave{
+    font-size: 16px;
+    color: #0065FC;
+    
+}
+
+/* BOUTON RECHERCHE */
+
+.contain-button{padding: 0px 15px 0px 10px;}
+
+.buttons{
+    border:none;  
+    height: 100%;
+    background-color:white;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: "Raleway-Bold";
+    
+}
+
+/* Icone information + phrase */
+
+
+.contain-info{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border:1px solid #DEEBFF;
+    margin: 0px 0px 0px 40px;
+}
+
+.fa-info{
+    font-size: 10px;
+}
+
+.text-info{
+    margin-left: 10px;
+}
+
+.text-info p{
+    font-family: "Raleway";
+    font-size: 15px;
+}
+
+.information{
+
+    display: flex;
+    align-items: center;  
+}
+
+/*! ------------------------------------------------ tous les hébergments ---------------------------------------------------------- */
+
+.hebergements-all{
+    
+    display: flex;
+   
+} 
+
+
+/*! ------------------------------------------------ Les plus populaires ---------------------------------------------------------- */
+
+.card-side-container{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    align-items: center;
+    margin:0px 30px 0px 0px;
+    width: 450px;
+     
+}
+
+
+.hebergement-a-marseille{
+    background-color: #f2F2F2;
+    border-radius: 30px;
+    width: 100%;
+    margin: 0px 30px;
+   
+}
+
+/*Reprendre le bloc du dessus*/
+
+.card-side{
+    border: 5px solid white;
+    border-radius: 20px;
+    margin: 20px 40px;
+    width: 330px;
+    height: 140px;
+    display: flex; 
+    box-shadow: 5px 5px 10px #aaaaaa; 
+    flex-flow: row-reverse;
+    background-size: 50% 100%;
+    background-position-y: -1.5vh;
+    background-repeat: no-repeat; 
+}
+
+
+
+/* .card-side-image{
+    width: 50%;
+    border-radius: 15px 0px 0px 15px;
+} */
+
+.card-side-container .card-side:nth-child(2){
+    background: url("ressources/Projet2-Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-size: 70% 100%;
+    background-position-x: -2.5vh;
+    background-repeat: no-repeat; 
+}
+
+.card-side-container .card-side:nth-child(3){
+    background: url("ressources/Projet2-Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-size: 50% 100%;
+    background-position-x: -1vh;
+    background-repeat: no-repeat; 
+}
+
+.card-side-container .card-side:nth-child(4){
+    background: url("ressources/Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-size: 40% 100%;
+    background-position-x: 0vh;
+    background-position-y: 0vh;
+    background-repeat: no-repeat; 
+}
+
+
+
+.fa-star{font-size: 12px;}
+
+/* DIV qui contient le texte uniquement */
+
+.card-side-info{
+    display: flex;
+    height: 100%;
+    width: 60%;
+    background-color:white;
+    flex-direction: column;  
+    border-radius: 0px 0px 0px 0px;
+    padding-left: 10px;
+}
+
+
+/* DIV qui contient le h6 */
+.card-side-title{
+    margin: 10px 10px 20px 10px;
+    height: 10%;
+    
+}
+
+
+/* DIV qui contient le p */
+.card-side-text{
+    margin: 10px;
+    font-size: 14px;
+}
+
+/* DIV qui contient les étoiles */
+.stars-side{
+    display: flex;
+    height: 80%;
+    align-items: flex-end;
+    margin: 10px;  
+}
+
+.card-side-container .card-side:nth-child(2) .stars-side :nth-child(1),
+.card-side-container .card-side:nth-child(2) .stars-side :nth-child(2),
+.card-side-container .card-side:nth-child(2) .stars-side :nth-child(3),
+.card-side-container .card-side:nth-child(2) .stars-side :nth-child(4),
+.card-side-container .card-side:nth-child(2) .stars-side :nth-child(5),
+
+.card-side-container .card-side:nth-child(3) .stars-side :nth-child(1),
+.card-side-container .card-side:nth-child(3) .stars-side :nth-child(2),
+.card-side-container .card-side:nth-child(3) .stars-side :nth-child(3),
+.card-side-container .card-side:nth-child(3) .stars-side :nth-child(4),
+
+.card-side-container .card-side:nth-child(4) .stars-side :nth-child(1),
+.card-side-container .card-side:nth-child(4) .stars-side :nth-child(2),
+.card-side-container .card-side:nth-child(4) .stars-side :nth-child(3),
+.card-side-container .card-side:nth-child(4) .stars-side :nth-child(4)
+{
+    color: #0065FC;
+}
+
+
+.card-side-container .card-side:nth-child(3) .stars-side :nth-child(5),
+
+.card-side-container .card-side:nth-child(4) .stars-side :nth-child(5)
+{
+    color: #f2f2f2;
+}
+
+.aside-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.aside-title i{
+    font-size: 20px;
+    margin: 15px;
+}
+
+.aside-title h2{
+    margin: 40px 0px 40px 40px ;
+    
+}
+
+
+
+
+
+/*! ------------------------------------------------ hébergement à marseille ---------------------------------------------------------- */
+
+
+
+.card-container{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center; 
+}
+
+
+.card-container-title{
+    width: 100%;
+    margin: 60px 20px 10px 40px;
+    
+    
+}
+
+
+.see-more{
+    width: 100%; 
+    margin: 20px 20px 0px 30px;
+
+}
+
+
+
+/* DIV PRINCIPALE (l'image sera en background)*/
+.card{
+    border: 6px solid white;
+    border-radius: 20px;
+    margin: 20px;
+    width: 230px;
+    height: 190px;
+    display: flex; 
+    align-items: flex-end;
+    background-size: 100% 100%;
+    background-position-y: -1.5vh;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 10px #aaaaaa; 
+}
+
+
+ .card-container .card:nth-child(1){
+    background-image: url("ressources/Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    
+ }
+
+
+.card-container .card:nth-child(2){
+    background-image: url("ressources/Projet2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");  
+}
+
+.card-container .card:nth-child(3){
+    background-image: url("ressources/Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");  
+}
+
+.card-container .card:nth-child(4){
+    background-image: url("ressources/Projet2-Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");  
+}
+
+.card-container .card:nth-child(5){
+    background-image: url("ressources/Projet2-Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");  
+}
+
+.card-container .card:nth-child(6){
+    background-image: url("ressources/Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");  
+}
+
+/* DIV qui contient le texte uniquement */
+
+.card-info{
+    display: flex;
+    height: 35%;
+    width: 100%;
+    background-color:white;
+    flex-direction: column;  
+    justify-content: center;
+    border-radius: 0px 0px 0px 0px;
+    padding-left: 10px;
+}
+/* DIV qui contient le h6 */
+
+.card-title{
+    margin-bottom: 5px;
+}
+
+
+
+/* DIV qui contient le p */
+.card-text{
+    margin-bottom: 5px;
+}
+
+/* DIV qui contient les étoiles */
+.stars{
+    display: inline-flex;
+}
+
+.card-container .card:nth-child(1) .stars :nth-child(1),
+.card-container .card:nth-child(1) .stars :nth-child(2),
+.card-container .card:nth-child(1) .stars :nth-child(3),
+.card-container .card:nth-child(1) .stars :nth-child(4),
+
+.card-container .card:nth-child(2) .stars :nth-child(1),
+.card-container .card:nth-child(2) .stars :nth-child(2),
+.card-container .card:nth-child(2) .stars :nth-child(3),
+.card-container .card:nth-child(2) .stars :nth-child(4),
+.card-container .card:nth-child(2) .stars :nth-child(5),
+
+.card-container .card:nth-child(3) .stars :nth-child(1),
+.card-container .card:nth-child(3) .stars :nth-child(2),
+.card-container .card:nth-child(3) .stars :nth-child(3),
+.card-container .card:nth-child(3) .stars :nth-child(4),
+
+.card-container .card:nth-child(4) .stars :nth-child(1),
+.card-container .card:nth-child(4) .stars :nth-child(2),
+.card-container .card:nth-child(4) .stars :nth-child(3),
+
+.card-container .card:nth-child(5) .stars :nth-child(1),
+.card-container .card:nth-child(5) .stars :nth-child(2),
+.card-container .card:nth-child(5) .stars :nth-child(3),
+.card-container .card:nth-child(5) .stars :nth-child(4),
+
+.card-container .card:nth-child(6) .stars :nth-child(1),
+.card-container .card:nth-child(6) .stars :nth-child(2),
+.card-container .card:nth-child(6) .stars :nth-child(3),
+.card-container .card:nth-child(6) .stars :nth-child(4),
+.card-container .card:nth-child(6) .stars :nth-child(5)
+{
+    color: #0065FC;
+}
+
+
+.card-container .card:nth-child(1) .stars :nth-child(5),
+
+.card-container .card:nth-child(3) .stars :nth-child(5),
+
+.card-container .card:nth-child(4) .stars :nth-child(4),
+.card-container .card:nth-child(4) .stars :nth-child(5),
+
+.card-container .card:nth-child(5) .stars :nth-child(5)
+{
+
+    color: #DEEBFF;
+}
+
+
+
+
+/*! ------------------------------------------------ activites à marseille ---------------------------------------------------------- */
+
+.card-container-title-activities{
+    width: 100%;
+    margin: 30px 0px 0px 40px;
+    
+}
+
+
+.card-container-activities{
+    width: 95%;
+    min-height: 25vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 30px;
+}
+
+/* DIV PRINCIPALE (l'image sera en background)*/
+.card-activities{
+    
+    border-radius: 20px;
+    margin: 10px;
+    display: flex; 
+    align-items: flex-end;
+    background-size: 340px 180px;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 10px #aaaaaa; 
+}
+
+/* DIV qui contient le texte uniquement */
+
+.card-info-activities{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color:white;
+    flex-direction: column;  
+    justify-content: center;
+    border-radius: 0px 0px 20px 20px;
+    padding-left: 10px;
+    
+}
+/* DIV qui contient le h6 */
+
+.card-title-activities{
+    margin: 10px;
+    font-family: "Raleway-Bold";
+}
+
+.card-container-title-activities{
+    font-family: "Raleway-Bold";
+
+}
+
+.card-container-activities .card-activities:nth-child(1){
+    background-image: url("ressources/Projet2-Reservia/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"); 
+    background-size: cover;  
+    grid-row: 1/7;
+    grid-column: 1;    
+}
+
+
+.card-container-activities .card-activities:nth-child(2){
+    background-image: url("ressources/Projet2-Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;    
+    background-position: center;
+    grid-row:1/5;
+    grid-column: 2;    
+}
+
+.card-container-activities .card-activities:nth-child(3){
+    background-image: url("ressources/Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");  
+    background-size: cover;    
+    grid-row:5/7;
+    grid-column: 2;    
+}
+
+.card-container-activities .card-activities:nth-child(4){
+    background-image: url("ressources/Projet2-Reservia/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"); 
+    background-size: cover;
+    background-position: center;
+    grid-row: 1/7;
+    grid-column: 3; 
+}
+
+.card-container-activities .card-activities:nth-child(5){
+    background-image: url("ressources/Projet2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+    grid-row:1/4;
+    grid-column: 4; 
+}
+
+.card-container-activities .card-activities:nth-child(6){
+    background-image: url("ressources/Projet2-Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");  
+    background-size: cover;
+    grid-row:4/7;
+    grid-column: 4; 
+}
+
+
+/* ! ------------------------Footer-------------------------- */
+
+.footer{
+    display: flex;
+    padding: 20px;
+    background-color: #f2f2f2;
+    flex-wrap: wrap;
+    padding: 30px; 
+    
+  }
+  
+  .footer div{line-height: 30px; margin-right:250px;}
+  
+  .footer div h3{margin-bottom: 15px;font-family: "Raleway-Bold";}
