@@ -131,11 +131,9 @@ section{margin: 0px 0px 30px 30px;}
   right: 0;
   top: 0;
 }
+/*
+ @media screen and (max-width: 620px) {
 
-@media screen and (max-width: 620px) {
-  /****************************/
-  /********* LOGO *************/
-  /****************************/
 
   .header,
   .onglet,
@@ -156,14 +154,14 @@ section{margin: 0px 0px 30px 30px;}
     align-items: center;
   }
 
-  /* taille et marge du logo */
+
   .logo-site-responsive{
     width: 90px;
     height: 45px;
     margin: 30px 40px 20px 20px;
   }
 
-  /* mise en page de la navigation et du survol de la navigation */
+
 
   #navigation-responsive {
     width: 100%;
@@ -204,7 +202,8 @@ section{margin: 0px 0px 30px 30px;}
     height: 100%;
     margin: 30px 20px 20px 20px;
   }
-}
+} 
+*/
 
 
 /*! *******************************************************************************/
@@ -274,42 +273,7 @@ section{margin: 0px 0px 30px 30px;}
     font-family: "Raleway-Bold";
 }
 
-@media screen and (max-width:620px){
-  
-    .logo-localisation{width: 50px;}
 
-    .conteneur-barre{height:50px;}
-  
-    .bouton-rechercher{
-        display:none;
-    }
-    
-    .zone-texte-recherche{
-        border-radius:0px 16px 16px 0px;
-        width:250px;
-        height:50px
-    }
-    
-    .bouton-rechercher-responsive{
-        display: flex;
-        width: 50px;
-        position:absolute;
-        right:0;
-        height:50px;
-        
-    }
-    
-    .envoyer-responsive{
-        border:none;
-        background-color: #0065FC;
-        width: 100%;
-        border-radius: 16px;
-        color:white;
-        font-size: 16px;
-        
-    }
-  
-}
 
 
 
@@ -402,6 +366,7 @@ section{margin: 0px 0px 30px 30px;}
 
 
 
+
 #hebergements{
     display: flex; 
     flex-wrap: wrap-reverse;
@@ -445,9 +410,9 @@ section{margin: 0px 0px 30px 30px;}
 .carte{
     border: 6px solid white;
     border-radius: 20px;
-    max-width: 230Px;
-    max-height: 190px;
-    width: 18vw;
+    max-width: 250Px;
+    max-height: 200px;
+    width: 20vw;
     height: 24vh;
     display: flex; 
     align-items: flex-end;
@@ -506,7 +471,7 @@ section{margin: 0px 0px 30px 30px;}
 .texte-carte{
     margin-bottom: 5px;
     font-size: 14px;
-    line-height: 25px;
+    /* line-height: 25px; */
 }
 
 
@@ -558,6 +523,8 @@ section{margin: 0px 0px 30px 30px;}
 
     color: #DEEBFF;
 }
+
+
 
 
 /*********************************************/
@@ -707,6 +674,61 @@ section{margin: 0px 0px 30px 30px;}
 
 
 
+@media screen and (max-width:1200px){
+
+    #hebergements-a-marseille{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .carte{min-width: 230px; min-height: 200px;}
+
+    .galerie-hebergements{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+
+        /* display: grid;
+        grid-template-columns: repeat(auto-fill, 30%);
+        grid-gap: 5%;
+        padding: 30px;
+        margin: 0; */
+    }
+    #populaires{
+        /* background-color: #f2f2f2; */
+        padding: 10px 0px 10px 0px;
+        min-width: 100%;
+        height: 100%;
+        display: flex;
+    
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    #galerie-pop{
+
+        /* display: grid;
+        grid-template-columns: repeat(auto-fill, 20%);
+        grid-gap:30px; */
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 20px;
+        /* justify-content: center; */
+        
+    }
+
+    .carte-pop{
+        margin: 20px;
+    }
+}
+
+
 /*! *******************************************************************************/
 /*! ************************* SECTION ACTIVITES  **********************************/
 /*! *******************************************************************************/
@@ -831,122 +853,3 @@ section{margin: 0px 0px 30px 30px;}
 #footer div h3{margin-bottom: 15px;font-family: "Raleway-Bold";}
 
 
-/*! *******************************************************************************/
-/*! ***************************** media queries ***********************************/
-/*! *******************************************************************************/
-
-@media screen and (max-width:1170px){
-
-    #hebergements-a-marseille{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-        margin: 0;
-    }
-
-    .galerie-hebergements{
-        width: 100%;
-        height: 60%;
-        /* display: flex;
-        flex-wrap: wrap;
-        justify-content: center; */
-
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 30%);
-        grid-gap: 5%;
-        padding: 30px;
-        margin: 0;
-    }
-    #populaires{
-        /* background-color: #f2f2f2; */
-        padding: 10px 0px 10px 0px;
-        min-width: 100%;
-        height: 100%;
-        display: flex;
-    
-        flex-wrap: wrap;
-        margin: 0;
-    }
-
-    #galerie-pop{
-
-        /* display: grid;
-        grid-template-columns: repeat(auto-fill, 20%);
-        grid-gap:30px; */
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 20px;
-        /* justify-content: center; */
-        
-    }
-
-    .carte-pop{
-        margin: 20px;
-    }
-}
-
-@media screen and (max-width:768px){
-
-    section{margin: 0;}
-
-
-
-    #hebergements-a-marseille{
-        background-color: white;
-        border-radius: 0; 
-               
-    }
-
-    .galerie-hebergements{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;        
-    }
-
-    
-
-    #populaires{
-        background-color: #f2F2F2;
-        border-radius: 0;
-        width: 100%;
-      
-    }
-
-    .carte{
-        border: 6px solid white;
-        border-radius: 20px;
-        width: 280px;
-        height: 23vh;
-        display: flex; 
-        align-items: flex-end;
-        background-size: 100% 100%;
-        background-position-y: -1.5vh;
-        background-repeat: no-repeat;
-        box-shadow: 5px 5px 10px #aaaaaa; 
-    }
-    
-
-}
-
-@media screen and (max-width:720px){
-
-    #galerie-pop{
-        display: flex;
-        justify-content: center;
-    }
-
-}
-
-@media screen and (max-width:375px){
-
-    #galerie-pop{
-        display: flex;
-        justify-content: center;
-    }
-
- 
-
-}
