@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+    
 	<title>Reservia</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="reservia.css">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="reservia-tablet.css" />
-    <link rel="stylesheet" media="screen and (max-width: 650px)" href="reservia-phone.css" />
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="reservia-phone.css" />
 
 </head>
 <body>
@@ -20,11 +21,11 @@
   
       <nav id="navigation">
         <ul>
-          <li class="onglet">Hébergements</li>
-          <li class="onglet">Activités</li>
+          <li class="onglet"><a href="#hebergements">Hébergements</a></li>
+          <li class="onglet"><a href="#activites">Activités</a></li>
           <!-- <li class="inscription">S'inscrire</li> -->
         </ul>
-  
+        
       </nav>
   
       <a href="#" class="inscription">S'inscrire</a>
@@ -40,8 +41,8 @@
   
       <nav id="navigation-responsive">
         <ul class="liste-responsive">
-          <li class="onglet-responsive">Hébergements</li>
-          <li class="onglet-responsive">Activités</li>
+            <li class="onglet-responsive"><a href="#hebergements">Hébergements</a></li>
+            <li class="onglet-responsive"><a href="#activites">Activités</a></li>
         </ul>
   
       </nav>
@@ -71,7 +72,7 @@
                 <input class="zone-texte-recherche" type="text" placeholder="Marseille, France"/>
       
                 <div class="bouton-rechercher">
-                    <input class="envoyer" type="submit" value="Rechercher" text="Rechercher" />
+                    <input class="envoyer" type="submit" value="Rechercher" />
                 </div>
 
                 <div class="bouton-rechercher-responsive">
@@ -112,13 +113,15 @@
 
         </ul>
 
-        <!-- <div class="information">
-
-            <div class="contain-info"><i class="fas fa-info"></i></div>
-            <div class="text-info"><p>Plus de 500 logements sont disponibles dans cette ville.</p></div>
-            
-        </div>  -->
+        
     </section>
+
+    <div id="information">
+
+        <div class="bulle-info"><i class="fas fa-info"></i></div>
+        <div class="texte-info"><p>Plus de 500 logements sont disponibles dans cette ville.</p></div>
+        
+    </div> 
 
 <!-- section contenant tous les hébergements-->
 
@@ -126,7 +129,7 @@
 
         <div id="hebergements-a-marseille">
 
-            <h2 class="titre-hebergements">Hébergements à Marseille</h2>
+            <h2 class="titre-hebergements-marseille">Hébergements à Marseille</h2>
     
             <div class="galerie-hebergements">
 

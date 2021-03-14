@@ -56,7 +56,7 @@ li{
 
 a{text-decoration: none; color:black;}
 
-section{margin: 0px 0px 30px 30px;}
+section{margin: 0px 0px 20px 30px;}
 
 /*! *******************************************************************************/
 /*! ***************************** HEADER ******************************************/
@@ -128,8 +128,8 @@ section{margin: 0px 0px 30px 30px;}
   color: #0065fc;
   font-family: "Raleway-Bold";
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 15px;
+  top: -1px;
 }
 /*
  @media screen and (max-width: 620px) {
@@ -210,6 +210,8 @@ section{margin: 0px 0px 30px 30px;}
 /*! ************************* SECTION BARRE DE RECHERCHE  *************************/
 /*! *******************************************************************************/
 
+
+
 .titre-recherche{
     margin-bottom:15px;
     font-family: "Raleway-Medium";
@@ -217,7 +219,7 @@ section{margin: 0px 0px 30px 30px;}
 }
 
 .texte-recherche{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 15px;
 }
 
@@ -258,7 +260,7 @@ section{margin: 0px 0px 30px 30px;}
     padding-left: 10px;
     font-family: "Raleway-Bold";
     border-radius: 0px;
-    margin: auto;
+    /* margin: auto; */
     border: 1px solid #F2F2F2;
 }
 
@@ -276,18 +278,31 @@ section{margin: 0px 0px 30px 30px;}
 
 
 
-
-/*? Il manque un truc ici  */
-
 /*! *******************************************************************************/
 /*! ***************************** SECTION FILTRES  ********************************/
 /*! *******************************************************************************/
 
-#filtres{display: flex; align-items: center; margin-bottom:20px;}
+#filtres{
+    display: flex; 
+    align-items: center;
+    margin-bottom:20px; 
+    flex-wrap: wrap; 
+     
+}
 
 #liste-filtres{
     display:flex;
     flex-wrap: wrap;
+    padding-top: 20px;
+    
+        
+}
+
+.titre-filtre{
+    
+    font-family: "Raleway-Medium";
+    margin-right: 20px;
+    
     
 }
 
@@ -295,7 +310,7 @@ section{margin: 0px 0px 30px 30px;}
     height:45px;
     position:relative;
     display:flex;
-    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 20px;
 }
   
@@ -329,33 +344,35 @@ section{margin: 0px 0px 30px 30px;}
 /********** information *************************/
 /************************************************/
 
-.contain-info{
+.bulle-info{
     display:flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 25px;
+    min-width: 25px;
     height: 25px;
-    border:1px solid #DEEBFF;
+    border:1px solid #d9d9d9;
 }
 
 .fa-info{
-    font-size: 10px;
+    font-size: 12px;
+    color: #0065fc;
 }
 
-.text-info{
+.texte-info{
     margin-left: 10px;
 }
 
-.text-info p{
+.texte-info p{
     font-family: "Raleway";
     font-size: 16px;
 }
 
-.information{
+#information{
 
     display: flex;
-    align-items: center;  
+    align-items: center; 
+    margin: 0px 0px 20px 30px; 
 }
 
 
@@ -370,7 +387,8 @@ section{margin: 0px 0px 30px 30px;}
 #hebergements{
     display: flex; 
     flex-wrap: wrap-reverse;
-    width: 100%;
+    width: 95%;
+    margin-bottom: 30px;
 }
 .fa-star{font-size: 12px;}
 .etoile{display: inline-flex;}
@@ -383,14 +401,19 @@ section{margin: 0px 0px 30px 30px;}
     background-color: #f2F2F2;
     border-radius: 30px;
     min-width: 65%;
-
+    
+    
 }
 
 
-.titre-hebergements{
+.titre-hebergements-marseille{
     width: 100%;
-    margin: 60px 20px 10px 40px;   
+    margin:40px 0px 10px 50px;
+    font-family: "Raleway-Medium";
+    font-size: 20px;
 }
+
+
 
 
 .galerie-hebergements{
@@ -399,19 +422,23 @@ section{margin: 0px 0px 30px 30px;}
     grid-template-columns: repeat(auto-fill, 30%);
     grid-gap: 30px;
     padding: 30px;   
+    justify-content: center;
 }
 
 
 .afficher-plus{
-    width: auto; 
-    margin: 20px 20px 20px 40px;
+    
+    margin: 40px 0px 0px 50px;
+    font-family: "Raleway-Medium";
+    font-size: 18px;
+    
 }
 
 .carte{
     border: 6px solid white;
     border-radius: 20px;
     max-width: 250Px;
-    max-height: 200px;
+    max-height: 250px;
     width: 20vw;
     height: 24vh;
     display: flex; 
@@ -548,20 +575,23 @@ section{margin: 0px 0px 30px 30px;}
 
 
 .titre-populaires{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-
+    position: relative;
 }
 
 .titre-populaires i{
     font-size: 20px;
-    margin: 15px;
+    position: absolute;
+    right: 50px;
+    top : 40px;
+    
+
 }
 
 .titre-populaires h2{
-    margin: 40px 0px 40px 40px ;
+    margin:40px 0px 20px 50px;
+    font-family: "Raleway-Medium";
+    font-size: 20px;
     
 }
 
@@ -618,8 +648,9 @@ section{margin: 0px 0px 30px 30px;}
     width: 60%;
     background-color:white;
     flex-direction: column;  
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px 10px 10px 0px;
     padding-left: 10px;
+
 }
 
 
@@ -734,12 +765,15 @@ section{margin: 0px 0px 30px 30px;}
 /*! *******************************************************************************/
 
 #activites{
-    width: 96%;
+    width: 95%;
 }
 
 .titre-activites{
-    width: 100%;
-    margin: 30px 0px;
+    /* width: 100%; */
+    margin:20px 10px;
+    font-family: "Raleway-Medium";
+    font-size: 20px;
+    
     
 }
 
@@ -845,10 +879,11 @@ section{margin: 0px 0px 30px 30px;}
     background-color: #f2f2f2;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 30px;
 
 }
   
-#footer div{line-height: 30px; width: 30%;}
+#footer div{margin-left:30px;line-height: 30px; width: 30%;}
   
 #footer div h3{margin-bottom: 15px;font-family: "Raleway-Bold";}
 
